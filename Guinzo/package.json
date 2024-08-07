@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/AdelGuinzo/Guinzo#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "url": "https://main--guinzo.netlify.app/guinzo/"
+
   }
 }
