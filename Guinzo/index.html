@@ -497,83 +497,79 @@
         </div>
       </section>
       <!-- /Services Section -->
-      <section id="hero1" class="hero section">
+      <<section id="combined-section" class="hero section">
         <div class="container">
           <div class="row gy-4">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1>Enhance your productivity with our OCR solution
-                <img src="images/OCR.png" alt="OCR Icon" style="width: 60px; height: 60px; margin-left: 10px;">
-
-              </h1>
-              <p>
-                We deliver customized AI solutions for text recognition and automation.
-              </p>
-            </div>
-            <div class="col-lg-5 order-1 order-lg-2 offset-lg-1 d-flex justify-content-center align-items-center">
-              <div id="animation-box" style="width: 300px; height: 350px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 0px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
-                <div id="lottie-animation3" style="width: 100%; height: 100%; transform: scale(1.5);"></div>
+            <!-- First Card -->
+            <div class="col-lg-6">
+              <div class="card" style=" overflow: hidden;">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <div style="width: 250px; height: 270px; box-shadow:  0 4px 8px 4px rgba(0, 0, 0, 0.1)">
+                    <div id="lottie-animation3" style="width: 100%; height: 100%; transform: scale(1.3);"></div>
+                  </div>
+                  <h4 style="font-size: 1.2rem; margin-top: 20px;">Enhance your productivity with our OCR solution
+                    <img src="images/OCR.png" alt="OCR Icon" style="width: 40px; height: 40px; margin-left: 10px;">
+                  </h4>
+                  <p style="font-size: 0.8rem; text-align: center;">
+                    We deliver customized AI solutions for text recognition and automation.
+                  </p>
+                </div>
               </div>
             </div>
-            <script>
-              var animation3 = lottie.loadAnimation({
-                container: document.getElementById("lottie-animation3"), // the DOM element that will contain the animation
-                renderer: "svg",
-                loop: true,
-                autoplay: true,
-                path: "animation3.json", // the path to the animation JSON
-              });
-            </script>
+      
+            <!-- Second Card -->
+            <div class="col-lg-6">
+              <div class="card" style="overflow: hidden;">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <div style="width: 250px; height: 270px; box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1)">
+                    <div id="lottie-animation4" style="width: 100%; height: 100%; transform: scale(1.3);"></div>
+                  </div>
+                  <h4 style="font-size: 1.2rem; margin-top: 20px;">We provide Computer Vision services too!
+                    <img src="images/vision.png" alt="OCR Icon" style="width: 40px; height: 40px; margin-left: 10px;">
+                  </h4>
+                  <p style="font-size: 0.8rem; text-align: center;">
+                    We deliver customized AI solutions for image and video analysis, providing advanced automation.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       
-      <section id="hero1" class="hero section">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-5 order-1 order-lg-1 d-flex justify-content-center align-items-center">
-              <div id="animation-box" style="width: 300px; height: 350px;  border-radius: 10px; overflow: hidden; display: flex; justify-content: center; align-items: center; margin-left: -100px;">
-                <div id="lottie-animation4" style="width: 100%; height: 100%; transform: scale(1.6);"></div>
-              </div>
-            </div>
-            <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center" style="margin-left: 100px;">
-              <h1>We provide Computer Vision services too ! 
-                <img src="images/vision.png" alt="OCR Icon" style="width: 60px; height: 60px; margin-left: 10px;">
-              </h1>
-              <p>
-                We deliver customized AI solutions for image and video analysis, providing advanced automation and insights.
-              </p>
-            </div>
-            <script>
-              var animation4 = lottie.loadAnimation({
-                container: document.getElementById("lottie-animation4"), // the DOM element that will contain the animation
-                renderer: "svg",
-                loop: true,
-                autoplay: true,
-                path: "animation4.json", // the path to the animation JSON
-              });
-            </script>
-          </div>
-        </div>
-      </section>
+      <!-- Include your Lottie animations -->
+      <script>
+        lottie.loadAnimation({
+          container: document.getElementById("lottie-animation3"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "animation3.json",
+        });
+      
+        lottie.loadAnimation({
+          container: document.getElementById("lottie-animation4"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "animation4.json",
+        });
+      </script>
+      
       
     
 
-      <!-- Alt Services Section -->
       <section id="alt-services" class="alt-services section">
-    
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
+            <!-- First Row: Two Items -->
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
               <div class="service-item position-relative">
                 <div class="img">
-                  <img
-                    src="images/services-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="images/services-1.jpg" class="img-fluid" alt="" />
                 </div>
                 <div class="details">
-                  <a href="service-details copy.html" class="stretched-link">
+                  <a href="portfolio-details copy.html" class="stretched-link">
                     <h3>ProMatch</h3>
                   </a>
                   <p>
@@ -582,78 +578,75 @@
                 </div>
               </div>
             </div>
-            <!-- End Service Item -->
-
+      
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
               <div class="service-item position-relative">
                 <div class="img">
-                  <img
-                    src="images/services-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="images/services-2.jpg" class="img-fluid" alt="" />
                 </div>
                 <div class="details">
-                  <a href="service-details.html" class="stretched-link">
-                    <h3>Eosle Commodi</h3>
+                  <a href="service-details copy 2.html" class="stretched-link">
+                    <h3>IFRS 17 Compliance and ALM Modeling</h3>
                   </a>
                   <p>
-                    Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                    sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-                  </p>
+                  The platform includes models for calculating key metrics such as the Contractual Service Margin and Risk Adjustment, along with comprehensive Asset Liability Management models to optimize asset-liability matching and mitigate financial risks.                  </p>
                 </div>
               </div>
             </div>
-            <!-- End Service Item -->
-
+            <!-- End of First Row -->
+      
+            <!-- Second Row: Single Centered Item -->
+            <div class="col-lg-12 text-center" data-aos="zoom-in" data-aos-delay="350">
+              <div class="service-item position-relative" style="max-width: 50%; margin: 0 auto;">
+                <div class="img">
+                  <img src="images/services-5.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="details">
+                  <a href="service-details.html" class="stretched-link">
+                    <h3>KYC Platform for Financial Institutions</h3>
+                  </a>
+                  <p>
+                    Solutions designed to streamline the Know Your Customer (KYC) process, utilizing advanced machine learning pipelines to enhance search accuracy and reduce false positives.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of Second Row -->
+      
+            <!-- Third Row: Two Items -->
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
               <div class="service-item position-relative">
                 <div class="img">
-                  <img
-                    src="images/services-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="images/services-3.jpg" class="img-fluid" alt="" />
                 </div>
                 <div class="details">
                   <a href="service-details.html" class="stretched-link">
-                    <h3>Ledo Markt</h3>
+                    <h3>AML System for Financial Institutions</h3>
                   </a>
                   <p>
-                    Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                    Minus ea aut. Vel qui id voluptas adipisci eos earum
-                    corrupti.
-                  </p>
+                    An Anti-Money Laundering system designed to detect suspicious transactions related to money laundering and terrorist financing. The project employs predefined rules and AI techniques to identify and flag potential risks.</p>
                 </div>
               </div>
             </div>
-            <!-- End Service Item -->
-
+      
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
               <div class="service-item position-relative">
                 <div class="img">
-                  <img
-                    src="images/services-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="images/services-4.jpg" class="img-fluid" alt="" />
                 </div>
                 <div class="details">
                   <a href="service-details.html" class="stretched-link">
-                    <h3>Asperiores Commodit</h3>
+                    <h3>Diffusion Art Generator</h3>
                   </a>
                   <p>
-                    Non et temporibus minus omnis sed dolor esse consequatur.
-                    Cupiditate sed error ea fuga sit provident adipisci neque.
-                  </p>
-                  <a href="service-details.html" class="stretched-link"></a>
+                    AI-powered project that uses advanced diffusion models to generate high-quality images from textual prompts. The system interprets the descriptive language and iteratively refines random noise into detailed visual art.</p>
                 </div>
               </div>
             </div>
-            <!-- End Service Item -->
+            <!-- End of Third Row -->
           </div>
         </div>
       </section>
+      
       <!-- /Alt Services Section -->
 
       <!-- Features Section -->
